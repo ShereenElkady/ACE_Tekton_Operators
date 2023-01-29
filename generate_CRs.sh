@@ -18,6 +18,8 @@ BARurl=${NEXUS_SERVER_BASE_URL}/repository/${NEXUS_REPOSITORY_NAME}/${NEXUS_PATH
 
 pwd 
 
+ls -al
+
 whoami
 
 mkdir ${CRs_generated_folder}
