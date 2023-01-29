@@ -18,7 +18,7 @@ BARurl=${NEXUS_SERVER_BASE_URL}/repository/${NEXUS_REPOSITORY_NAME}/${NEXUS_PATH
 
 pwd 
 
-ls -al /workspace/output
+ls -al /workspace/output/operator_resources_CRs
 
 whoami
 
