@@ -20,8 +20,8 @@ pwd
 
 whoami
 
-sudo mkdir ${CRs_generated_folder}
-sudo mkdir ${CRs_generated_folder}/configurations
+mkdir ${CRs_generated_folder}
+mkdir ${CRs_generated_folder}/configurations
 
 # Create the Integration Server CR in any case
 echo "Generating integration server CR yaml"
