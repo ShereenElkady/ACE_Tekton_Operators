@@ -36,7 +36,7 @@ spec:
     - image: 'image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ace-with-zip:latest'
       name: generate-crs
       securityContext:
-        runAsUser: 1001
+        privileged: true
       env:
           - name: INTEGRATION_SERVER_NAME
             value: $(params.integrationServerName)
