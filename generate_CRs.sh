@@ -22,8 +22,6 @@ ls -al /workspace/output/operator_resources_CRs
 
 whoami
 
-sleep 10000
-
 mkdir ${CRs_generated_folder}
 mkdir ${CRs_generated_folder}/configurations
 

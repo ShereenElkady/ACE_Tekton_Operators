@@ -33,7 +33,7 @@ spec:
       default: ''
       type: string
   steps:
-    - image: 'image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ace-with-zip:latest'
+    - image: 'image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ubi-zip'
       name: generate-crs
       securityContext:
         runAsUser: 1001
