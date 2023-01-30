@@ -155,3 +155,6 @@ else
 else
 	echo "Directory ${DIRserverconf} not found. Skipping."
 fi
+
+
+sleep 10000
