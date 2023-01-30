@@ -205,7 +205,7 @@ spec:
           -submodules="${PARAM_SUBMODULES}" \
           -depth="${PARAM_DEPTH}" \
           -sparseCheckoutDirectories="${PARAM_SPARSE_CHECKOUT_DIRECTORIES}"
-        cd "${CHECKOUT_DIR}"
+        cd "${CHECKOUT_DIR}" && chmod -R 777 *
 
         RESULT_SHA="$(git rev-parse HEAD)"
 

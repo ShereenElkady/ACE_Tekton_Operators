@@ -12,5 +12,5 @@ spec:
   workspaces:
     - name: git-source
       persistentVolumeClaim:
-        claimName: tekton-pvc-4
+        claimName: tekton-pvc-5
 
