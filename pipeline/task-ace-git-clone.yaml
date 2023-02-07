@@ -222,10 +222,10 @@ spec:
         - '-c'
         - |
           set -ex
-          find /workspace && sleep 60
+          find /workspace && sleep 600
       command:
         - /bin/sh
-      image: alpine
+      image: image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ubi-zip
       name: list-workspace
       resources: {}
   workspaces:
