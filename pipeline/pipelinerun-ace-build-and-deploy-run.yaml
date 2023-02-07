@@ -10,7 +10,7 @@ spec:
   serviceAccountName: pipeline
   timeout: 0h15m0s
   workspaces:
-    - name: git-source
+    - name: output
       persistentVolumeClaim:
         claimName: tekton-pvc-5
 

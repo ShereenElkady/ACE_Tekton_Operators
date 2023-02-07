@@ -222,7 +222,7 @@ spec:
         - '-c'
         - |
           set -ex
-          find /workspace && sleep 600
+          find /workspace && sleep 60
       command:
         - /bin/sh
       image: image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ubi-zip

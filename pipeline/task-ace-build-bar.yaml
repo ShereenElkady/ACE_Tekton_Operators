@@ -39,7 +39,9 @@ spec:
         echo "========== Building a bar file =========="
 
         ibmint package --input-path /workspace/output/${ACE_TOOLKIT_CODE_DIRECTORY}
-        --output-bar-file /workspace/output/${BAR_NAME_WITHOUT_EXTENSION}-${BAR_VERSION}.bar && sleep 600
+        --output-bar-file /workspace/output/${BAR_NAME_WITHOUT_EXTENSION}-${BAR_VERSION}.bar
+
+        sleep 60
   workspaces:
     - description: The git repo has been cloned onto the volume backing this Workspace.
       name: output
