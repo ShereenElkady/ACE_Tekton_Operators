@@ -12,5 +12,4 @@ spec:
   workspaces:
     - name: output
       persistentVolumeClaim:
-        claimName: tekton-pvc-5
-
+        claimName: tekton-pvc

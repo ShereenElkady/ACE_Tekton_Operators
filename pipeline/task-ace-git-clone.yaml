@@ -225,7 +225,7 @@ spec:
           find /workspace && sleep 60
       command:
         - /bin/sh
-      image: image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ubi-zip
+      image: image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ace-with-zip
       name: list-workspace
       resources: {}
   workspaces:
