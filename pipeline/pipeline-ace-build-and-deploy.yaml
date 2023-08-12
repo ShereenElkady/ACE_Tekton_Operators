@@ -102,6 +102,15 @@ spec:
         name: ace-generate-crs
       workspaces:
         - name: output
+    - name: ace-deploy-crs
+      runAfter:
+        - ace-generate-crs
+        - ace-build-bar
+      taskRef:
+        kind: Task
+        name: ace-deploy-crs
+      workspaces:
+        - name: output
     - name: ace-nexus-upload-bar
       params:
         - name: nexusServerBaseURL
@@ -119,19 +128,10 @@ spec:
         - name: barVersion
           value: $(params.bar-version)
       runAfter:
-        - ace-build-bar
+        - ace-deploy-crs
       taskRef:
         kind: Task
         name: ace-nexus-upload-bar
-      workspaces:
-        - name: output
-    - name: ace-deploy-crs
-      runAfter:
-        - ace-generate-crs
-        - ace-nexus-upload-bar
-      taskRef:
-        kind: Task
-        name: ace-deploy-crs
       workspaces:
         - name: output
   workspaces:
