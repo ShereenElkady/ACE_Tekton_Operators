@@ -96,7 +96,7 @@ spec:
         - name: barVersion
           value: $(params.bar-version)
       runAfter:
-        - fetch-from-git
+        - ace-build-bar
       taskRef:
         kind: Task
         name: ace-generate-crs
@@ -105,7 +105,6 @@ spec:
     - name: ace-deploy-crs
       runAfter:
         - ace-generate-crs
-        - ace-build-bar
       taskRef:
         kind: Task
         name: ace-deploy-crs
