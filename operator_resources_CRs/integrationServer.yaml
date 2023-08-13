@@ -9,7 +9,7 @@ spec:
   enableMetrics: true
   license:
     accept: true
-    license: L-APEH-CJUCNR
+    license: L-LFMR-BTD75V
     use: CloudPakForIntegrationProduction
   pod:
     containers:
