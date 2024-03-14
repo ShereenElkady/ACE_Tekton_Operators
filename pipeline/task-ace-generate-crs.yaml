@@ -33,7 +33,7 @@ spec:
       default: ''
       type: string
   steps:
-    - image: 'image-registry.openshift-image-registry.svc:5000/cp4i-cicd-demo/ace-with-zip'
+    - image: 'image-registry.openshift-image-registry.svc:5000/tekton-demo-ab/ace-with-zip'
       name: generate-crs
       securityContext:
         runAsUser: 1001
@@ -55,7 +55,7 @@ spec:
       resources: {}
       script: |
         /workspace/output/generate_CRs.sh
-        find /workspace && sleep 60
+        find /workspace && sleep 30
   workspaces:
     - description: The git repo has been cloned onto the volume backing this Workspace.
       name: output

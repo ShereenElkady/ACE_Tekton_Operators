@@ -30,11 +30,11 @@ spec:
       type: string
     - name: deployment-namespace
       description: The name of the Openshift namespace/project , where the integration server and configuration will be deployed
-      default: cp4i-cicd-demo
+      default: tekton-demo-ab
       type: string
     - name: nexus-server-base-url
       description: The Base URL of the Nexus server where the bar file will be uploaded
-      default: http://nexus-route-cp4i-cicd-demo.itzroks-661002yxlw-6k2o69-6ccd7f378ae819553d37d5f2ee142bd6-0000.eu-gb.containers.appdomain.cloud
+      default: http://nexus-route-tekton-demo-ab.apps.65ee7d5e777e25001ee8f9d5.cloud.techzone.ibm.com
       type: string
     - name: nexus-repository-name
       description: The name of the Nexus repository, where the bar file will be uploaded
