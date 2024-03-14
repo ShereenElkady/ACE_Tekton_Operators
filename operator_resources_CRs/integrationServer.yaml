@@ -9,7 +9,7 @@ spec:
   enableMetrics: true
   license:
     accept: true
-    license: L-LFMR-BTD75V
+    license: L-KZVS-2G3FW4
     use: CloudPakForIntegrationProduction
   pod:
     containers:
