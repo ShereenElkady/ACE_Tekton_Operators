@@ -15,7 +15,7 @@ spec:
 
         echo "========== Applying integration server CR yaml to Openshift =========="
 
-         sleep 120
+         sleep 10
 
         oc apply -f /workspace/output/operator_resources_CRs/generated/integrationServer-generated.yaml
   workspaces:
