@@ -15,8 +15,6 @@ spec:
 
         echo "========== Applying integration server CR yaml to Openshift =========="
 
-         sleep 1000
-
         oc apply -f /workspace/output/operator_resources_CRs/generated/integrationServer-generated.yaml
   workspaces:
     - description: The git repo has been cloned onto the volume backing this Workspace.
