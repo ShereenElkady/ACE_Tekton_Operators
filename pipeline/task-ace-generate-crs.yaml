@@ -33,7 +33,7 @@ spec:
       default: ''
       type: string
   steps:
-    - image: 'image-registry.openshift-image-registry.svc:5000/tekton-demo-ab/ace-with-zip'
+    - image: 'image-registry.openshift-image-registry.svc:5000/tekton-demo-te/ace-with-zip'
       name: generate-crs
       securityContext:
         runAsUser: 1001

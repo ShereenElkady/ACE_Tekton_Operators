@@ -30,15 +30,15 @@ spec:
       type: string
     - name: deployment-namespace
       description: The name of the Openshift namespace/project , where the integration server and configuration will be deployed
-      default: tekton-demo-ab
+      default: tekton-demo-te
       type: string
     - name: nexus-server-base-url
       description: The Base URL of the Nexus server where the bar file will be uploaded
-      default: http://nexus-route-tekton-demo-ab.apps.65ee7d5e777e25001ee8f9d5.cloud.techzone.ibm.com
+      default: http://nexus-route-tekton-demo-te.apps.672b618e40ded34cf106e87b.ocp.techzone.ibm.com
       type: string
     - name: nexus-repository-name
       description: The name of the Nexus repository, where the bar file will be uploaded
-      default: cp4i-nexus-repo
+      default: telecom-egypt-repo
       type: string
     - name: nexus-path
       description: The path of the Nexus repository, where the bar file will be uploaded, for example - "org/dept"
@@ -50,7 +50,7 @@ spec:
       type: string
     - name: nexus-upload-user-password
       description: The Nexus user's password (default for Nexus is "admin123")
-      default: admin123
+      default: admin1234
       type: string
   tasks:
     - name: fetch-from-git
