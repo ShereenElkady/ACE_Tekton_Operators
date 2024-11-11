@@ -14,7 +14,7 @@ DIRgenericFiles=${PathToConfigFolder}/extensions
 CRs_template_folder=/workspace/output/operator_resources_CRs
 CRs_generated_folder=/workspace/output/operator_resources_CRs/generated
 
-BARurl=/workspace/output/mybarname-69.bar
+BARurl=${NEXUS_SERVER_BASE_URL}/repository/${NEXUS_REPOSITORY_NAME}/${NEXUS_PATH}/${BAR_VERSION}/${BAR_NAME}-${BAR_VERSION}.bar
 
 pwd 
 
