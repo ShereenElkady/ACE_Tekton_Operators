@@ -34,7 +34,7 @@ spec:
   createDashboardUsers: true
   service:
     endpointType: http
-  version: 12.0-lts
+  version: 12.1.2
   logFormat: basic
   replicas: 1
   barURL: replace-With-Bar-URL
