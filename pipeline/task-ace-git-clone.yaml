@@ -225,7 +225,7 @@ spec:
           find /workspace && sleep 60
       command:
         - /bin/sh
-      image: image-registry.openshift-image-registry.svc:5000/tekton-demo-ab/ace-with-zip
+      image: image-registry.openshift-image-registry.svc:5000/tekton-demo-te/ace-with-zip
       name: list-workspace
       resources: {}
   workspaces:
